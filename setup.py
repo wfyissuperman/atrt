@@ -30,7 +30,7 @@ setup(
     description="Active Temperature Sensing and Thermal Response Test Analysis Package",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/atrt",  # 替换为您的实际仓库URL
+    url="https://github.com/wfyissuperman/atrt_0.1.0",  
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -47,7 +47,7 @@ setup(
     install_requires=read_requirements(),
     keywords="thermal conductivity, DTS, temperature sensing, groundwater flow, heat transfer",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/atrt/issues",
-        "Source": "https://github.com/yourusername/atrt",
+        "Bug Reports": "https://github.com/wfyissuperman/atrt_0.1.0/issues",
+        "Source": "https://github.com/wfyissuperman/atrt_0.1.0",
     },
 )
