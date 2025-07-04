@@ -1,0 +1,31 @@
+# PyPI配置文件模板
+# 请将此文件复制到您的用户目录下并重命名为 .pypirc
+# Windows路径: C:\Users\您的用户名\.pypirc
+# 然后将 YOUR_API_TOKEN_HERE 替换为您的实际API Token
+
+[distutils]
+index-servers = 
+    pypi
+    testpypi
+
+[pypi]
+username = __token__
+password = pypi-YOUR_API_TOKEN_HERE
+
+[testpypi]
+repository = https://test.pypi.org/legacy/
+username = __token__
+password = pypi-YOUR_TEST_API_TOKEN_HERE
+
+# 如何获取API Token:
+# 1. 访问 https://pypi.org/manage/account/token/
+# 2. 点击 "Add API token"
+# 3. 输入token名称，如 "atrt-upload"
+# 4. 选择作用域（首次发布选择"Entire account"）
+# 5. 复制生成的token（格式: pypi-xxxxxxxxxx）
+# 6. 将token粘贴到上面的password字段
+
+# 注意：
+# - Token只显示一次，请妥善保存
+# - 不要将此文件提交到Git仓库
+# - TestPyPI的token需要在 https://test.pypi.org/ 单独申请
